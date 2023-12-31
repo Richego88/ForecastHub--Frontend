@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <!-- Just trying new things with the script up here. With the defer attribute it works perfectly and executes the code only after the HTML is done -->
+    <script defer src="login.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+        <a id="homeButton" href="index.html"><img id="logo" src="assets/logo.svg" /></a>
+      </a>
+    </div>
+
+    <div id="container">
+      <div class="connexionCard">
+        <div>
+          <p>SIGN-UP</p>
+          <div class="divider"></div>
+        </div>
+        <input id="registerName" type="text" placeholder="Name" />
+        <div><input id="registerEmail" type="email" placeholder="E-mail"> 
+          <div id="emailError" class="error"></div>
+        </div>
+        <input id="registerPassword" type="password" placeholder="Password" minlength="4" />
+        
+        
+
+        <button id="register">Register</button>
+      </div>
+      <div class="connexionCard">
+        <div>
+          <p>SIGN-IN</p>
+          <div class="divider"></div>
+        </div>
+        <input id="connectionEmail" type="email" placeholder="E-mail" />
+        <input id="connectionPassword" type="password" placeholder="Password" />
+        <button id="connection">Connect</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
